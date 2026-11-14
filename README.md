@@ -8,9 +8,6 @@ summarize code, find TODOs, investigate a file. It classifies the request, reaso
 with an LLM, calls tools exposed as an **MCP** server, and streams its step-by-step
 reasoning plus live token cost to a browser dashboard.
 
-It is intentionally a coherent *system*, not a chatbot wrapper: every piece maps to a
-real engineering decision you can defend in an interview.
-
 ## Architecture
 
 ```
