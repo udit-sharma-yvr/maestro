@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maestro — agentic assistant</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Maestro</h1>
+      <span class="muted">self-hosted agentic assistant · MCP tools · streaming reasoning · live cost</span>
+    </header>
+    <main>
+      <section class="composer">
+        <textarea id="prompt" rows="3" placeholder="Ask Maestro to investigate the sandbox… e.g. ‘Read sandbox/notes.md and summarize the TODOs.’"></textarea>
+        <button id="run">Run</button>
+        <div class="meta">
+          <span id="status" class="muted">idle</span>
+          <span id="cost" class="cost">$0.000000</span>
+        </div>
+      </section>
+      <section id="timeline" class="timeline"></section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
